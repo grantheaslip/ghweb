@@ -1,0 +1,59 @@
+<!DOCTYPE html>{% load static %}
+<html lang="en-CA" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+
+        <!-- {{ app_name_and_version }} -->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Grant Heaslip</title>
+        <meta name="og:title" content="Grant Heaslip" />
+        <meta name="twitter:title" content="Grant Heaslip" />
+        {% with meta_description='Web developer, wannabe polymath, and video game nerd living in Toronto, Canada' %}
+            <meta name="description" content="{{ meta_description }}" />
+            <meta name="og:description" content="{{ meta_description }}" />
+            <meta name="twitter:description" content="{{ meta_description }}" />
+        {% endwith %}
+        <link rel="canonical" href="https://grant.heaslip.me/" />
+        <meta name="og:url" content="https://grant.heaslip.me/" />
+        <meta property="og:type" content="website" />
+        <meta name="author" content="Grant Heaslip" />
+        <meta name="twitter:card" content="summary" />
+
+        <link rel="stylesheet" type="text/css" media="screen" href="{% static 'personal/global.css' %}" />
+
+        <!--[if lt IE 9]>
+            <script src="{% static 'personal/html5shiv.min.js' %}"></script>
+        <![endif]-->
+
+        <!-- realfavicongenerator.net favicons -->
+        <link rel="apple-touch-icon" sizes="57x57" href="{% static 'personal/favicons/apple-touch-icon-57x57.png' %}" />
+        <link rel="apple-touch-icon" sizes="60x60" href="{% static 'personal/favicons/apple-touch-icon-60x60.png' %}" />
+        <link rel="apple-touch-icon" sizes="72x72" href="{% static 'personal/favicons/apple-touch-icon-72x72.png' %}" />
+        <link rel="apple-touch-icon" sizes="76x76" href="{% static 'personal/favicons/apple-touch-icon-76x76.png' %}" />
+        <link rel="apple-touch-icon" sizes="114x114" href="{% static 'personal/favicons/apple-touch-icon-114x114.png' %}" />
+        <link rel="apple-touch-icon" sizes="120x120" href="{% static 'personal/favicons/apple-touch-icon-120x120.png' %}" />
+        <link rel="apple-touch-icon" sizes="144x144" href="{% static 'personal/favicons/apple-touch-icon-144x144.png' %}" />
+        <link rel="apple-touch-icon" sizes="152x152" href="{% static 'personal/favicons/apple-touch-icon-152x152.png' %}" />
+        <link rel="apple-touch-icon" sizes="180x180" href="{% static 'personal/favicons/apple-touch-icon-180x180.png' %}" />
+        <link rel="icon" type="image/png" href="{% static 'personal/favicons/favicon-32x32.png' %}" sizes="32x32" />
+        <link rel="icon" type="image/png" href="{% static 'personal/favicons/favicon-194x194.png' %}" sizes="194x194" />
+        <link rel="icon" type="image/png" href="{% static 'personal/favicons/favicon-96x96.png' %}" sizes="96x96" />
+        <link rel="icon" type="image/png" href="{% static 'personal/favicons/android-chrome-192x192.png' %}" sizes="192x192" />
+        <link rel="icon" type="image/png" href="{% static 'personal/favicons/favicon-16x16.png' %}" sizes="16x16" />
+        <link rel="manifest" href="{% static 'personal/favicons/manifest.json' %}" />
+        <link rel="shortcut icon" href="{% static 'personal/favicons/favicon.ico' %}" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="msapplication-TileImage" content="{% static 'personal/favicons/mstile-144x144.png' %}" />
+        <meta name="msapplication-config" content="{% static 'personal/favicons/browserconfig.xml' %}" />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- /realfavicongenerator.net favicons -->
+    </head>
+    <body>
+        <div class="centred">
+            <main>
+                {% block 'body' %}{% endblock %}
+            </main>
+        </div>
+    </body>
+</html>

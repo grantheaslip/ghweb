@@ -1,0 +1,4 @@
+brotlipy==0.7.0
+Django==1.11.2
+waitress==1.0.2
+whitenoise==3.3.0
