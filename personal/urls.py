@@ -7,7 +7,7 @@ urlpatterns = [
     url(
         r'^$',
         IndexView.as_view(),
-        name='personal.index'
+        name='index'
     ),
     url(
         r'^static/personal/favicons/manifest.json$',
@@ -15,11 +15,11 @@ urlpatterns = [
             template_name='personal/manifest.json',
             content_type='application/json'
         ),
-        name='personal.manifestjson',
+        name='manifestjson',
     ),
     url(
         r'',
         NotFoundView.as_view(),
-        name='personal.notfound'
+        name='notfound'
     )
 ]
