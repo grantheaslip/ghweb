@@ -10,6 +10,14 @@ urlpatterns = [
         name='index'
     ),
     url(
+        r'^static/personal/favicons/browserconfig.xml$',
+        TemplateView.as_view(
+            template_name='personal/browserconfig.xml',
+            content_type='application/xml'
+        ),
+        name='browserconfigxml',
+    ),
+    url(
         r'^static/personal/favicons/manifest.json$',
         TemplateView.as_view(
             template_name='personal/manifest.json',
