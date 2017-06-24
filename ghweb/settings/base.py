@@ -1,5 +1,10 @@
+import builtins
 import os
 from pathlib import Path
+from pprint import pprint
+
+# Globally alias `pprint.pprint()` as `pp()` for debugging
+builtins.pp = pprint
 
 BASE_DIR = Path(__file__).resolve().parents[2]
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
