@@ -41,11 +41,11 @@
         <link rel="icon" type="image/png" href="{% static 'personal/favicons/favicon-96x96.png' %}" sizes="96x96" />
         <link rel="icon" type="image/png" href="{% static 'personal/favicons/android-chrome-192x192.png' %}" sizes="192x192" />
         <link rel="icon" type="image/png" href="{% static 'personal/favicons/favicon-16x16.png' %}" sizes="16x16" />
-        <link rel="manifest" href="{% url 'personal:manifestjson' %}" />
+        <link rel="manifest" href="{% static 'personal/favicons/manifest.json' %}" />
         <link rel="shortcut icon" href="{% static 'personal/favicons/favicon.ico' %}" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="msapplication-TileImage" content="{% static 'personal/favicons/mstile-144x144.png' %}" />
-        <meta name="msapplication-config" content="{% url 'personal:browserconfigxml' %}" />
+        <meta name="msapplication-config" content="{% static 'personal/favicons/browserconfig.xml' %}" />
         <meta name="theme-color" content="#ffffff" />
         <!-- /realfavicongenerator.net favicons -->
     </head>
