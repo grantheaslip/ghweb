@@ -1,7 +1,6 @@
 import personal
 from django.core.exceptions import ImproperlyConfigured
 from importlib import import_module
-from pprint import pprint
 
 def app_name_and_version(request):
     if request.resolver_match.app_name == '':
