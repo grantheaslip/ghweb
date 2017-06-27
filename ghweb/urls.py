@@ -6,6 +6,6 @@ from django.views.generic.base import RedirectView
 app_name = 'ghweb'
 urlpatterns = [
     # Todo: Set permanent=True once this is tested
-    url(r'^(?P<canonical_path>.*)index\.html$', RedirectView.as_view(url='/%(canonical_path)s')),
+    url(r'^(?P<canonical_path>.*)index\.html$', RedirectView.as_view(url='/%(canonical_path)s', permanent=True)),
     url(r'^', include('personal.urls'))
 ]

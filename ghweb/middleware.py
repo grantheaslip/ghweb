@@ -47,8 +47,7 @@ class CanonicalSchemeAndHostMiddleware(object):
                 canonical_url
             )
 
-            # TODO: Change permanent to True once tested
-            return redirect(canonical_url, permanent=False)
+            return redirect(canonical_url, permanent=True)
 
 
 class ExceptionLoggingMiddleware(object):
